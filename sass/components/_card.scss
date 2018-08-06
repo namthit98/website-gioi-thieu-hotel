@@ -1,0 +1,46 @@
+.card {
+  background-color: white;
+  box-shadow: 0 0.125rem 0.125rem 0 rgba(0,0,0,.1);
+  height: 50rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__img {
+    // background-color: pink;
+    width: 100%;
+    height: 100%;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    padding: 2rem 3rem;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  &__link {
+    font-size: 1.3rem;
+    transition: all .4s;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    & i {
+      margin-left: .5rem;
+    }
+  }
+}

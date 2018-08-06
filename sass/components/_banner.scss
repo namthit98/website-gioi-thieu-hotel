@@ -1,0 +1,84 @@
+#reservation .banner {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../images/header-rooms.jpg");
+  background-attachment: scroll;
+
+  &__content {
+    top: 40%;
+  }
+
+  &__icon {
+    display: none;
+  }
+}
+
+.banner {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../images/nha-trang.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  // margin-bottom: 10rem; 
+
+  &__content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60rem;
+    letter-spacing: 1rem;
+  }
+
+  &__heading {
+    font-size: 8rem;
+    font-weight: 300;
+    color: $color-gray-light;
+    text-align: center;
+
+    @media only screen and (max-width: 767px){
+      font-size: 4rem;
+    }
+
+    @media only screen and (max-width: 460px){
+      font-size: 3rem;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 48%;
+    bottom: 5%;
+    width: 5rem;
+    height: 3rem;
+    border-radius: 20px;
+    border: 2px solid $color-gray-light;
+    transform: rotate(90deg);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      right: 50%;
+      width: 1rem;
+      height: 1rem;
+      background-color: $color-gray-light;
+      transform: translate(-50%);
+      border-radius: 50%;
+      animation: scroll 1.2s infinite;
+    }
+  }
+}
+
+@keyframes scroll {
+  0%{
+    opacity: 1;
+  }
+    
+  100% {
+    opacity: 0;
+    transform: translateX(1.5rem);
+  }
+
+}

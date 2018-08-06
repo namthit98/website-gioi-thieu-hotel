@@ -1,0 +1,49 @@
+#tour {
+  background-color: #fff;
+}
+
+//////////////////////////////////////////////////////////
+///////////////////// Tour-information
+//////////////////////////////////////////////////////////
+.tour-information {
+  font-size: 2rem;
+  font-weight: 700;
+
+  & span {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid $color-gray-light;
+    transition: border-bottom .4s;
+    color: $color-gray-dark-2;
+    cursor: pointer;
+  }
+
+  & span.active {
+    border-bottom: 1px solid $color-gray-dark-2;
+    color: $color-gray-dark-3;
+  }
+
+  & span:hover {
+    border-bottom: 1px solid $color-gray-dark-2;
+    color: $color-gray-dark-3;
+  }
+}
+
+
+
+//////////////////////////////////////////////////////////
+///////////////////// Detail
+//////////////////////////////////////////////////////////
+.detail,
+.detail-2 {
+  padding: 5rem;
+  font-size: 1.7rem;
+
+  & .row:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.detail-2 {
+  display: none;
+}

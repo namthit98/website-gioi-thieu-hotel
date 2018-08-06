@@ -1,0 +1,113 @@
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0 0rem 0;
+
+  background-color: $color-gray-dark-2;
+
+  &__input {
+    padding: .7rem;
+    flex: 0 0 80%;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    background-color: $color-gray-light;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    flex: 0 0 20%;
+    padding: .7rem 0;
+    font-size: 1.7rem;
+    border: none;
+    outline: none; 
+    font-weight: 700;
+    cursor: pointer;
+    transition: color .4s, background-color .4s;
+    background-color: $color-gray-dark-3;
+    color: $color-gray-light;
+    
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: $color-gray-dark-3;
+      background-color: $color-gray-dark;
+    }
+  }
+
+  &__heading {
+    font-size: 2.1rem;
+    color: $color-gray-light;
+  }
+
+  & ul {
+    font-size: 1.5rem;
+    color: $color-gray-light;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & a {
+      color: rgba($color-gray-light, .6);
+      transition: color .4s;
+
+      &:hover {
+        color: rgba($color-gray-light, 1);
+      }
+    }
+  }
+
+  &__phone {
+    font-size: 1.5rem;
+    color: rgba($color-gray-light, .6);
+  }
+
+  &__email {
+    font-size: 1.5rem;
+    color: rgba($color-gray-light, .6);
+  }
+
+  &__socials i {
+    font-size: 4rem;
+    color: rgba($color-gray-light, .5);
+    transition: color .4s;
+    cursor: pointer;
+    margin-right: 2rem;
+
+    &:hover {
+      color: #0770bf;
+
+      &.fab.fa-youtube{
+        color: #FF0000;
+      }
+
+      &.fab.fa-facebook{
+        color: #4267B2;
+      }
+
+      &.fab.fa-instagram{
+        color: #DF3868;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 1.7rem;
+    color: rgba($color-gray-light, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+
+    background-color: $color-gray-dark-3;
+
+    & p {
+      margin: 0;     
+    }
+  }
+}

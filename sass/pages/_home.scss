@@ -1,0 +1,217 @@
+//////////////////////////////////////////////////////////
+///////////////////// HEADER
+//////////////////////////////////////////////////////////
+.header {
+  background-color: $color-gray-dark-2;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  font-size: 1.6rem;
+
+  &__menu-icon {
+    transition: background-color .4s;
+    border-right: 1px solid $color-gray-dark-3;
+    cursor: pointer;
+
+    &:hover span {
+      color: $color-gray-dark;
+    }
+
+    & span {
+      text-transform: uppercase;
+      color: white;
+      transition: color .4s;
+    }
+  }
+
+  &__middle {
+    height: auto;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    color: $color-gray-light;
+    margin-right: 2rem;
+    padding: 1.5rem 0;
+    position: relative;
+
+    & .btn {
+      padding: .5rem 1rem;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      border: 1px solid $new;
+      color: $color-gray-light;
+    }
+
+    & .btn:hover {
+      background-color: $new;
+      color: $color-gray-light;
+      transition: color 0s, background-color .2s;
+    }
+
+    &:hover > a, &:hover i {
+      color: $color-gray-dark;
+      transition: color .4s;
+    }
+
+    &:hover ul {
+      opacity: 1;
+      visibility: visible;
+      transform: scaleY(1);
+      z-index: 100;
+    }
+
+    &:hover a {
+      text-decoration: none;
+    }
+
+    & a {
+      color: $color-gray-light;
+      margin-right: .8rem;
+    }
+    
+    & > ul {
+      background-color: $color-gray-dark-2;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 20rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .4s;
+      transform: scaleY(0);
+      transform-origin: 0% 0%;
+      z-index: 10;
+
+      & li {
+        padding: .5rem 1rem;
+        transition: background-color .4s;
+
+        &:hover {
+          background-color: $color-gray-dark;
+          cursor: pointer;
+        }
+
+        &:hover a {
+          color: $color-gray-dark-2;
+        }
+      }
+
+      & li:not(:last-child) {
+        border-bottom: 1px solid $color-gray-dark-3;
+      }
+    }
+  }
+
+  &__logo {
+    width: 4.5rem;
+  }
+
+  &__name-hotel {
+    font-size: 2.4rem;
+    color: $color-gray-light;
+    transition: color .4s;
+    
+    &:hover {
+      text-decoration: none;
+      color: $color-gray-dark;
+    }
+  }
+
+  &__phone {
+    font-size: 1.6rem;
+    color: $color-gray-light;
+
+    & i {
+      margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      padding-right: 5rem;
+    }
+  }
+}
+
+.languages {
+  font-size: 1.7rem;
+  color: $color-gray-light;
+  cursor: pointer;
+
+  & img {
+    margin-left: .5rem;
+  }
+}
+
+.info {
+  // background: white;
+  padding: 2.5rem 0rem;
+
+  &__heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+
+  &__services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+    & h3 {
+      font-weight: 300;
+    }
+
+    & i {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+      color: $new;
+      
+    }
+  }
+}
+
+.intro {
+  width: 100%;
+  // background-image: url("./../images/bg-offer.jpg");
+  // background-size: cover;
+  // background-position: center center;
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
+  background-color: #fff;
+  margin: 5rem 0;
+  height: auto;
+  padding: 10rem 0;
+
+  & .container-fluid {
+    // box-shadow: 0 0.125rem 0.125rem 0 rgba(0,0,0,.1);
+    // padding: 5rem 0;
+    height: 100%;
+  }
+
+  &__logo {
+    width: 15rem;
+    transform: translateX(.5rem);
+  }
+
+  &__name-hotel {
+    font-size: 3rem;
+    text-align: center;
+    color: $color-gray-dark-3;
+  }
+
+  &__content {
+    font-size: 2rem;
+    text-align: justify;
+    font-weight: 300;
+  }
+}
+
+.map {
+  height: 40rem;
+}
